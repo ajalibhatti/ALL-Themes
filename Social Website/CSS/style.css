@@ -1,0 +1,99 @@
+
+    
+    .carousel-image-1{
+    background:url(../images/SlideImage1.png);
+    background-color:#59748e;
+    background-size:cover;
+    height:50rem;
+    }
+    .carousel-image-2{
+        background:url(../images/SlideImage2.png);
+        background-color:#59748e;
+        background-size:cover;
+        height:50rem;
+        }
+        .carousel-image-3{
+            background:url(../images/SlideImage3.png);
+            background-color:#59748e;
+            background-size:cover;
+            height:50rem;
+            }
+            .carousel-image-4{
+                background:url(../images/SlideImage4.png);
+                background-color:#59748e;
+                background-size:cover;
+                height:50rem;
+                }
+                .carousel-image-5{
+                    background:url(../images/SlideImage5.png);
+                    background-color:#59748e;
+                    background-size:cover;
+                    height:50rem;
+                    }
+
+.text-size{
+    font-size:.9rem;
+    font-style: normal;
+}
+
+.carousel-caption
+{
+    position: absolute;
+    margin-bottom: 20%;
+     
+}
+
+body
+{
+    overflow-x: hidden;
+}
+.bg-lightgray
+{
+
+   background-color: #f5f7fa;
+}
+.blue, #blue
+{
+    color: #506a85;
+}
+.bg-blue
+{
+    background-color: #506a85;
+}
+@media(max-width:798px)
+{
+    .disappear{
+        
+        display: none;
+        
+    }
+    .navbar
+    {
+        position: fixed;
+        margin-top:-40px !important;
+        width:100%;   
+        z-index: 1000;
+    }
+
+}
+.light-blue{
+background-color:#59748e;
+}
+
+.navbar
+    {
+    position: fixed;
+    
+    width:100%;   
+    z-index: 1000; 
+    }
+  #showcase
+  {
+      margin-top: 40px;
+  }
+
+footer{
+    background-color:#2f4052;
+} 
+
+   

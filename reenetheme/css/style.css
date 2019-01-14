@@ -1,0 +1,57 @@
+.navbar
+{
+    position: fixed;
+    margin-top: 40px;
+    width:100%;   
+    z-index: 1000; 
+}
+#sec-head-three
+{
+    background: #f2f4f7;
+}
+#sec-three
+{
+    background: #ccddff;
+}
+.navbar {
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.8;
+  }
+
+#sec-one
+{
+    background: url(../img/lights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+#sec-one .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.7);
+}
+#sec-one .inner-sec-one
+{
+    padding-top: 200px;
+}
+
+.upmove
+{
+    margin-top: -10px;
+}
+#sec-head-four
+{
+background: #334768
+}
+ul.no-bullets li 
+{
+    list-style-type: none !important;
+}
+.lead
+{
+    font-size: 12px;
+}

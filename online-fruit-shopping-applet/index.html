@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Applet - Fruit</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h1>Welcome to my Fruit Applet</h1>
+			</div>
+			<form class="form-inline">
+			  <div class="form-group">
+				<label for="fruitList">Fruit</label>
+				<select class="form-control" id="fruitList" onchange="updatePerKg()">
+					<option value="" selected disabled>Select Fruit</option>
+					<option value="Apple">Apple</option>
+					<option value="Orange">Orange</option>
+					<option value="Grapes">Grapes</option>
+					<option value="Mango">Mango</option>
+					<option value="Pomegranate">Pomegranate</option>
+					<option value="Pineapple">Pineapple</option>
+					<option value="Banana">Banana</option>
+					<option value="Guava">Guava</option>
+				</select>
+			  </div>
+			  <div class="form-group">
+				<label for="quantity">Quantity</label>
+				<input type="number" min="1" max="10" value="1" class="form-control" id="quantity" placeholder="1">
+			  </div>
+			  <div class="form-group">
+				<label for="price">Price per kg (Rs:)</label>
+				<input type="text" min="1" class="form-control" id="price" placeholder="Rs. 0" readonly>
+			  </div>
+			  <button type="submit" onclick="updateList(); return false;" class="btn btn-primary">Add To List</button>
+			</form>
+			
+			
+			
+			<!-- Listing -->
+			
+			<div class="table table-striped" style="margin-top: 30px">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Fruit</th>
+							<th>Quantity</th>
+							<th>Price</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="fruitListing">
+					
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4"><strong>Total: </strong><span id="totalPrice">0</span></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			
+			<div class="text-right"  style="margin-top: 30px">
+				<button id="checkout" class="btn btn-lg btn-success">Proceed to Checkout</button>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>		
+		<script src="js/custom.js"></script>
+	</body>
+</html>

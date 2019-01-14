@@ -1,0 +1,296 @@
+/*#####################################################
+            bootstrap 4 media query
+######################################################*/
+/* large devices ( desktop and desktop) */
+@media(min-width:1200px)
+{
+   /*okay*/
+   #services .container
+   {
+       padding: 0 40px;
+   }
+   
+ }
+/* medium devices (landscape tablet and medium desktop) */
+@media(min-width:992px) and (max-width:1199px)
+{
+  /*okay*/
+  .navbar
+  {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding:5px 0;   
+      
+  }
+  #services .container, #main-nav .container
+  {
+      
+      padding: 0;
+  }
+  #services .container .col-md-4
+  {
+    padding: 0;
+  }
+  .navbar-nav
+  {
+      float: left;
+  } 
+  
+}
+/* small devices (portrait tablet and small desktop) */
+@media(min-width:768px) and (max-width:991px)
+{
+    /*navbar*/
+    .navbar
+    {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding:5px 0;
+        
+    }
+    #services .container, #main-nav .container
+    {
+        padding: 0;
+    }
+    .navbar-nav
+    {
+        float: left;
+    }
+    /*about*/
+    
+
+
+    /*services*/
+    
+    #services .service-item-icon i
+    {
+        margin-right: 10px;
+    }
+    .service-item-title h3
+    {
+        font-size: 20px;
+    }
+    /*team*/
+    #team .container
+    {
+        padding: 0 40px;
+    }
+    /*testimonial*/
+
+    .customer-testimonial blockquote
+    {
+        padding: 6px 50px;
+    }
+    .customer-testimonial blockquote::before
+    {
+        left:20px;
+    }
+    .customer-testimonial blockquote::after
+    {
+        right: 80px;
+    }
+    /*pricing*/
+    #pricing .container, #contact .container
+    {
+        padding: 0;
+    }
+    #footer-bottom .container
+    {
+        padding: 0;
+    }
+    /*stats*/
+    #stats .container
+    {
+        padding: 0 40px;
+    }
+    /*footer*/
+    #footer-copyrights
+    {
+        text-align: center;
+    }
+    #footer-menu
+    {
+        display: none;
+    }
+  
+}
+/* extra small devices ( mobile) */
+@media(max-width:767px)
+{  
+    /*nav*/
+    .navbar
+    {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding:5px 10;
+        
+    }
+    #services .container, #main-nav .container
+    {
+        padding: 0;
+    }
+    .navbar-nav
+    {
+        float: left;
+    }
+    /*home*/
+    #home  #home-heading h3
+    {
+        font-size: 24px;
+    }
+    /*buttons*/
+    .btn-general
+    {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    /*about*/
+    #about-bg-diagonal
+    {
+        border-left: 0;
+        border-top:0;
+        width:100%;
+        height: 350px;
+        float: none;
+    } 
+    #about-content-box
+    {
+        padding: 10px;
+        height: 350px;
+        width: 100%;
+    }
+    #about .container
+    {
+        padding: 0 10px;
+    }
+    /*services*/
+    #services .service-item-icon i
+    {
+        margin-right: 15px;
+    }
+    .service-item-title h3
+    {
+        font-size: 20px;
+    }
+    /*work*/
+    #work .mg-wrapper img
+    {
+        min-width:100% ;
+    }
+    /*testimonial*/
+    #testimonials blockquote p
+    {
+        display: none;
+    }
+    .customer-testimonial blockquote::before, .customer-testimonial blockquote::after
+    {
+        display: none;
+    }
+    
+    /*stats*/
+    #stats .container
+    {
+        padding: 0 20px;
+    }
+    #stats .stats-item
+    {
+        padding: 30px 0;
+    }
+   
+    /*pricing*/
+    #pricing .container
+    {
+        padding: 0 5px;
+    }
+
+    /*footer*/
+    #footer-copyrights
+    {
+        text-align: center;
+    }
+    #footer-menu
+    {
+        display: none;
+    }
+    #contact .container
+    {
+        padding: 0 10px;
+    }
+    
+}
+/* extra small devices ( mobile) */
+@media(max-width:480px)
+{
+    /*services*/
+    .service-item-title h3
+    {
+        font-size: 17px;
+    }
+    /*team*/
+    
+    #pricing .container
+    {
+        padding: 0 5px;
+    }
+    #footer-copyrights
+    {
+        text-align: center;
+    }
+    #footer-copyrights p
+    {
+        font-size: 12px;
+    }
+    #contact .container
+    {
+        padding: 0 10px;
+    }
+    /*stats*/
+    #stats .container
+    {
+        padding: 0 20px;
+    }
+    #stats .stats-item
+    {
+        padding: 30px 0;
+    }
+    
+}
+/* extra small devices ( mobile) */
+@media(max-width:320px)
+{
+    /*services*/
+    .service-item-title
+    {
+        font-size: 14px;
+    }   
+     /*team*/
+     
+    .navbar-nav
+    {
+        float: left;
+    }
+    /*stats*/
+    #stats .container
+    {
+        padding: 0 20px;
+    }
+    /*footer*/
+    #contact .container
+    {
+        padding: 0 10px;
+    }
+    #footer-copyrights
+    {
+        text-align: center;
+    }
+    #footer-copyrights p
+    {
+        font-size: 12px;
+    }
+    #footer-menu
+    {
+        display: none;
+    }
+    #pricing .container
+    {
+        padding: 0 5px;
+    } 
+  
+}

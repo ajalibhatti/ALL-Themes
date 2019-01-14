@@ -1,0 +1,651 @@
+/******************************************************
+ 
+       font-family: Roboto Condensed
+       Greenish Blue:#34c6d3 (buttons, icons, link, line and for background)
+       steel gray: #41464b (headings)
+       blue biyacks :#64707b (for paragraph)
+       white :#fff (text with background)
+       black :#000 
+
+
+********************************************************/
+html
+{
+    height: 100%;
+}
+body
+{
+    font-family: "Roboto Condensed", sans-serif;
+    
+    height: 100%;
+    position: relative;
+}
+h3
+{
+    text-transform: uppercase;
+}
+p
+{
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*#############################################################
+
+                            Home
+#################################################################*/
+
+#home
+{
+    height: 100%;
+}
+#home-cover
+{
+
+    background-image: url("../img/SlideImage1.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#home-content-box
+{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#home-content-box-inner
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#home-heading h3
+{
+    color: white;
+    font-size: 55px;
+    font-weight:700;
+    margin: 20px 0 20px 0;
+}
+/*##########################################################
+                general parallex effect
+###########################################################*/
+.bg-parallex
+{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*##########################################################
+                Buttons
+###########################################################*/
+.btn-general
+{
+border-color: #fff;
+border-width: 2px;
+border-radius: 0;
+padding: 12px 26px 12px 26px;
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+}                
+.btn-white
+{
+color: #fff;
+}
+.btn-white:hover, .btn-white:focus
+{
+    background-color: #fff;
+    color: #41464b;
+}
+.btn-blue
+{
+    color: #34c6d3;
+    border-color: #34c6d3;
+}
+.btn-blue:hover, .btn-blue:focus
+{
+    background-color: #34c6d3;
+    color: #fff;
+}
+.btn-back-to-top
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+/*##########################################################
+                Animated
+###########################################################*/
+#home-cover, #home-heading, #home-button
+{
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+#home-cover
+{
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+#home-heading
+{
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+#home-button
+{
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+/*##########################################################
+                content box genric
+###########################################################*/
+.content-box
+{
+    padding: 60px 0 60px 0;
+}
+.content-title h3
+{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.content-title-white
+{
+    color: #fff;
+}
+.content-title-underline
+{
+    width:30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+/*##########################################################
+                service setion
+###########################################################*/
+.services-item
+{
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.service-item-icon i
+{
+color: #34c6d3;
+float: left;
+padding: 15px;
+margin-right: 25px;
+width:75px;
+height:75px;
+text-align: center;
+}
+.services-item:hover .service-item-icon i
+{
+    color: #fff;
+    background: #34c6d3;
+}
+.service-item-title h3
+{
+    color: #41464b;
+    font-size:20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    
+}
+.service-item-description p
+{
+    margin: 0;
+    padding-left: 85px;
+
+}
+/*##########################################################
+                about section
+###########################################################*/
+#about-bg-diagonal
+{
+width: 60%;
+height: 700px;
+float: right;
+border-top: 700px solid transparent;
+border-left: 200px solid #fff;
+background-image: url("../img/SlideImage3.png");
+}
+#about-content-box
+{
+    float: left;
+    height: 700px;
+    
+
+}
+ 
+#about-content-box-outer
+{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#about-content-box-inner
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about .content-title h3
+{
+    text-align: left;
+}
+#about .content-title .content-title-underline
+{
+    margin: 0 0 30px 0;
+}
+#about-desc p
+{  
+    margin-bottom: 30px;
+    
+}
+/*##########################################################
+                work section
+###########################################################*/
+.row.no-gutters[class*=col-]
+{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+.img-wrapper
+{
+    overflow: hidden;
+}
+.img-wrapper img
+{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.img-wrapper img:hover
+{
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+/*##########################################################
+                team section
+###########################################################*/
+.team-member
+{
+    margin:0 15px 0 15px;
+}
+.team-member-info
+{
+    padding:10px 0 30px 0;
+}
+h4.team-member-name
+{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top:20px;
+}
+h4.team-member-designation
+{
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+/*##########################################################
+                social icon section
+###########################################################*/
+.social-list
+{
+    
+    padding-left:0;
+    margin: 0;
+    
+}
+.social-list li
+{
+    list-style: none;
+    display: inline-block !important;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-icon i{
+    font-size: 17px;
+    
+}
+.icon-gray i
+{
+color: #64707b ;
+}
+.social-icon i:hover
+{
+    color: #34c6d3;
+}
+.icon-white i
+{
+    color:#fff;
+}
+/*##########################################################
+                Testomonial section
+###########################################################*/
+#testimonials-cover
+{
+    background-image: url("../img/client/soragrit-wongsa-311182-unsplash.jpg");
+}
+#testimonials .content-box
+{
+    background-color: rgba(0, 0,0, .5)
+}
+.customers-testomonials
+{
+    padding: 50px 0;
+}
+.customer-testimonial img
+{
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+.customer-testimonial blockquote
+{
+    border:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #fff !important;
+    padding: 6px 150px;
+    position: relative;
+}
+.customer-testimonial blockquote p
+{
+    color: #fff;
+}
+.customer-testimonial blockquote::before,
+ .customer-testimonial blockquote::after
+ {
+     font-size: 80px;
+     font-style: normal;
+     line-height: 1;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+ }
+.customer-testimonial blockquote::before
+{
+content:"\201C";
+top:0;
+left:120px;
+}
+.customer-testimonial blockquote::after
+{
+content:"\201D";
+bottom: 0;
+right: 260px;
+}
+.testimonial-auther p
+{
+    color: #fff;
+    font-size: 17px;
+}
+.testimonial-auther p strong
+{
+    display: block;
+}
+/*##########################################################
+                Price section
+###########################################################*/
+.price-box
+{
+    border: 3px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+h4.pricing-title
+{
+background-color: #34c6d3;
+color: #fff;
+display: inline-block;
+padding: 7px 15px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+margin:0 0 30px 0;
+}
+h3.pricing-value
+{
+    font-size: 60px;
+    font-weight: 700;
+}
+h3.price-value sup
+{
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+ul.pricing-spac
+{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+ul.pricing-spec li p
+{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.price-box-lg
+{
+    background-color: #34c6d3;
+    
+    padding: 90px 0;
+    margin: 0;
+}
+.price-box-lg h4.pricing-title
+{
+background-color: #fff;
+color: #34c6d3;
+}
+.price-box-lg ul.pricing-spac li p
+{
+    color: #fff;
+}
+/*##########################################################
+                stats section
+###########################################################*/
+#stats-cover
+{
+    background-image: url("../img/client/emma-matthews-973230-unsplash.jpg");
+    
+}
+#stats .content-box
+{
+background-color: rgba(0,0, 0, 0.8)
+}
+.stats-item
+{
+    padding: 100px 0;
+}
+.stats-item i
+{
+    color: #34c6d3;
+}
+.stats-item h2
+{
+    color:#fff;
+    font-size:35px;
+    font-weight: 700;
+    margin: 15px 0 1px 0;
+}
+.stats-item p
+{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+}
+/*##########################################################
+                client section
+###########################################################*/
+.client
+{
+    padding: 40px 0;
+}
+/*##########################################################
+                contact section
+###########################################################*/
+footer
+{
+    background-color: #41464b;
+    padding-top:30px;
+    border-top: 5px solid rgba(0,0, 0, 0.1) 
+}
+#contact-left h3, #contact-right h3
+{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+#contact-left p
+{
+    color: #fff;
+    margin-bottom: 30px;
+}
+#contact-info
+{
+    background-image: url("../img/contact-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+address
+{
+    color:#fff;
+}
+address strong
+{
+    font-size: 16px;
+}
+address strong, #phone-fax-email strong
+{
+letter-spacing: 1px;
+}
+form .form-control
+{
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom:20px;
+    color: #fff; 
+}
+/*##########################################################
+                footer section
+###########################################################*/
+#footer-bottom
+{
+    background-color: rgba(0,0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+#footer-copyrights p
+{
+    margin: 0;
+    color: #fff;
+}
+#footer-menu
+{
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    }
+#footer-menu ul
+{
+    list-style:none;
+    padding-left: 0;
+    margin: 0;
+}
+#footer-menu ul li
+{
+    display: inline-block;
+}
+#footer-menu ul li a
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#footer-menu ul li a:hover
+{
+    color:#34c6d3;
+}
+#footer-bottom .container
+{
+    padding: 0;
+}
+/*##########################################################
+                navbar section
+###########################################################*/
+.navbar
+{
+    padding:20px 0px;
+    color: #fff;
+    -webkit-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;transition: all .5s ease-in-out;
+}
+.vesco-top-nav
+{
+    background: rgba(0, 0,0, .7);
+    padding: 7px 10px;
+}
+.container
+{
+ padding: 0 80px;
+}
+.navbar-collapse
+{
+    flex-grow: 0;
+}
+.navbar-nav
+{
+    float: right;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.navbar-nav li a:hover, .navbar-nav li a:focus
+{
+    color: #34c6d3 !important;
+}
+.navbar-toggler
+{
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.nav-link.active
+{
+    
+       color:#34c6d3 !important; 
+}

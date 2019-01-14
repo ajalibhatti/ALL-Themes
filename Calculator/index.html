@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <br>
+
+    <h1 class="dispaly-4" align="center">Calculator</h1>
+    <div align="center" >
+            <input type="text" class="form-control  input-lg">
+    </div>
+   
+    <main class="conatiner">
+        <div align="center" >
+            <button class="btn btn-secondary btn-lg btn-num" data-val="7">7</button>
+              <button class="btn btn-secondary btn-lg btn-num" data-val="8">8</button>
+                <button class="btn btn-secondary btn-lg btn-num" data-val="9">9</button>
+            <button class="btn btn-secondary btn-lg btn-num btn-act" data-val=" / ">&divide;</button>
+        </div>
+        <div align="center" >
+                <button class="btn btn-secondary btn-lg btn-num" data-val="4">4</button>
+                <button class="btn btn-secondary btn-lg btn-num" data-val="5">5</button>
+                <button class="btn btn-secondary btn-lg btn-num" data-val="6">6</button>
+                <button class="btn btn-secondary btn-lg btn-num btn-act" data-val=" x ">&times;</button>
+        </div>
+        <div align="center" >
+                <button class="btn btn-secondary btn-lg btn-num" data-val="1">1</button>
+                <button class="btn btn-secondary btn-lg btn-num" data-val="2">2</button>
+                <button class="btn btn-secondary btn-lg btn-num" data-val="3">3</button>
+                <button class="btn btn-secondary btn-lg btn-num btn-act" data-val=" - ">&minus;</button>
+        </div>
+        <div align="center" >
+                <button class="btn btn-secondary btn-lg btn-num" data-val="0">0</button>
+                <button class="btn btn-warning btn-lg btn-num ">clear</button>
+                <button class="btn btn-success btn-lg btn-num ">&equals;</button>
+                <button class="btn btn-secondary btn-lg btn-num btn-act" data-val=" + ">&plus;</button>
+        </div>
+    </main>
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+<script>
+    $(document).ready(function(){
+
+        if($('input').hasClass('needClear'))
+        {
+            if((this).hasClass('btn-num'))
+            {
+                $('input').val();
+            }
+            if((this).hasClass('btn-act'))
+            {
+                $('input').removeClass('needClear');
+            }
+
+        }
+
+        $('.btn-secondary').click(function(){
+            var current_val=$('input').val();
+            var val=$(this).data('val')
+            $('input').val(current_val+val);
+        });
+        $('.btn-warning').click(function(){
+        $('input').val('');
+        });
+
+        $('.btn-success').click(function(){
+        var val=$('input').val().split(" ");
+        var result='ERROR';
+        
+            switch(val[1])
+            {
+                case'/':
+                    if(parseInt(val[0])==0)
+                    {
+                        result='ERROR'
+                    }
+                    else{
+                        result =val[0] / val[2];
+                    }
+                break;
+                case'x':
+                result =parseInt(val[0]) * parseInt(val[2]);
+                break;
+                case'+':
+                result =parseInt(val[0]) + parseInt(val[2]);
+                break;
+                case'-':
+                result =parseInt(val[0]) - parseInt(val[2]);
+                break;            
+            }
+        $('input').val(result.toLocaleString());
+        $('input').addClass('needClear');
+        });
+    });
+</script>
+</html>

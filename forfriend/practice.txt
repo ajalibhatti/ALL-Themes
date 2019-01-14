@@ -1,0 +1,159 @@
+""""""""""""""""""""""""HTML"""""""""""""""""""""""""""""""""""""""""""
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="forfriend/style.css">
+  <title>Bootstrap Theme</title>
+</head>
+<body>
+<section>
+<div id="header"></div>
+		<div id="wrapper">
+			<div class="row">
+				<div  class="col-md-2">
+				</div>
+				<div id="box2" class="col-md-2">
+				</div>
+				<div id="box3" class="col-md-2">
+				</div>
+				<div id="box1" class="col-md-2">
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+			<div id="Box11"></div> <!--main_content closed-->
+			<div id="Box22"></div> <!--sidebar closed-->
+			<div id="Box33"></div>
+			</div>
+			<div class="row">
+			<div class="size"></div> <!--main_content closed-->
+			<div id="Box22"></div> <!--sidebar closed-->
+			<div id="Box33"></div>
+			</div>
+			<div class="row">
+			<div class="footer"></div> <!--sidebar closed-->
+			<div class="footer-end"></div>
+		</div>
+</section>
+</body>
+</html>
+
+
+
+
+""""""""""""""""""""""""""""""CSS""""""""""""""""""""""""""""""""""""""""
+
+
+
+#wrapper
+{
+ width:100%;
+margin:0 auto;
+ 
+}
+#header
+{
+	fixed:top;
+	height:50px;
+	background-color:red;
+	margin-right:52px;	
+}
+.row {
+     display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+#box2
+{
+	background-color:orange;
+	height:50px;
+}
+#box3
+{
+	background-color:blue;
+	height:50px;
+}
+
+.col-md-2
+{
+	background-color:green;
+	height:50px;
+	max-width:15%;
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-md-4
+{
+	max-width:25%;
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+	background-color:orange;
+	height:50px;
+}
+
+
+#Box11
+{   min-height:250px;
+	width:17.2%;
+	float:left;
+	background-color:blue;
+}
+#Box22
+{   
+    min-height:250px;
+	width:61.8%;
+	background-color:#99ebff;
+	float:left;
+}
+
+#Box33
+{
+    min-height:250px;
+	width:17.2%;
+	background-color:#6666ff;
+	float:right;
+}
+.size
+{
+	min-height:250px;
+	width:17.2%;
+	float:left;
+	background-color:orange;
+}
+
+.footer
+{
+	height:150px;
+	width:79%;
+	background-color:green;
+	float:left;
+}
+.footer-end
+{
+	min-height:150px;
+	width:17.2%;
+	background-color:#6666ff;
+	float:right;
+}
+
+
+
+
+
+
+

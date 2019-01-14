@@ -1,0 +1,212 @@
+@import 'fontawesome/fontawesome.scss';
+@import 'bootstrap/bootstrap.scss';
+
+// Theme fonts
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/theme-fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/theme-fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	font-size: 62.5%; // 62.5% * pixel value in decimal == pixels
+}
+
+// Theme colors
+$lightGray: #f5f7fa;
+$text-blue: #506a85;
+$text-d-blue:#69778a;
+$lightGreen:#00bc9c;
+// Theme fonts name
+$sans-r: 'source_sans_proregular';
+
+.top-bar {
+	background-color: $lightGray;
+	padding: 1.4rem 0;
+	border-bottom: 1px solid #e6e9ed;
+	.top-contact {
+		a {
+			color: $text-blue;
+			font-size: 1.2rem;
+			margin-right: 2.6rem;
+			&:last-child {
+				margin-right: 0;
+			}
+			i {
+				margin-right: 0.6rem;
+			}
+		}
+	}
+	
+	.social-contact {
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin-right: 2.6rem;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					color: $text-blue;
+					font-size: 1.2rem;
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}
+nav{
+a{
+	font-weight: bold;
+	font-size:1.5rem;
+	color:$text-blue !important;
+	}
+
+}
+@media(max-width:798px)
+{
+    .disappear{
+        
+        display: none;
+        
+    }
+}
+
+
+ #showcase{
+		margin-top:12rem;
+		.carousel-item{
+		 height:60rem;
+		}
+		.carousel-image-1{
+		background:url(../images/SlideImage1.png);
+		background-color:#59748e;
+		background-size:cover;
+		}
+		.carousel-image-2{
+		background:url(../images/SlideImage2.png);
+		background-color:#59748e;
+		background-size:cover;
+		}
+		.carousel-image-3{
+		background:url(../images/SlideImage3.png);
+		background-color:#59748e;
+		background-size:cover;
+		p{
+		color:$text-d-blue;
+		font-weight:bold  !important;
+		margin-right:-3rem;
+		}
+		}
+		.carousel-image-4{
+		background:url(../images/SlideImage4.png);
+		background-color:#59748e;
+		background-size:cover;
+		}
+		.carousel-image-5{
+		background:url(../images/SlideImage5.png);
+		background-color:#59748e;
+		background-size:cover;
+		}
+		.carousel-inner{
+		.carousel-caption{
+		 position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+		
+		}
+		.carousel-caption1{
+		 position: absolute;
+         top: 45%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+		}
+		h1{
+		
+		span
+		{
+			background:$text-blue;
+		}
+		.display-3
+		{
+		font-size:4.5rem;
+		line-height:1.2rem;
+		}
+		
+		}
+		
+	  }
+	}
+	#who-we-are
+	{
+	color:$text-d-blue;
+	padding-bottom:13rem;
+	p{
+	font-size:1.6rem;
+	}
+	}
+	#latest-work
+	{
+	color:$text-d-blue;
+	padding-top:13rem;
+	background:$lightGray;
+	p{
+	font-size:1.6rem;
+	}
+	ol{
+	.carousel-indicators{
+	
+	color:$lightGray;
+	}
+	li:hover{
+	background:green;
+	}
+	
+	}
+}
+
+#get-in-touch{
+		color:$text-d-blue;
+		margin-top:13rem;
+		margin-bottom:13rem;
+		h1{
+		font-size:4rem;
+		}
+		p{
+		margin-top:4rem;
+		font-size:2.2rem;
+		} 
+		a{
+		margin-top:4rem;
+		}
+}
+
+#footer{
+background-color:#2f4052;
+.col-md-3{
+margin-top:7rem;
+}
+p, ul{
+font-size:14px;
+}
+}
+
+#sub-Footer{
+p{
+font-size:1.3rem;
+}
+ul{
+font-size:1.3rem;
+}
+}
+
+	

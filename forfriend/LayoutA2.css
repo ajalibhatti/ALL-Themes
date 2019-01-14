@@ -1,0 +1,100 @@
+ body
+{
+	background-color:#efefef;
+}
+#wrapper
+{
+ width:900px;
+margin:0 auto;
+border:2px solid #ccc; 
+}
+#container
+{
+	min-height:50px;
+}
+#logo
+{
+	min-height:50px;
+	background-color:#777;
+	margin-bottom:10px;
+	width:450px;
+	float:left;
+	min-height:50px;
+	color:white;
+}
+#nav
+{
+	
+	width:450px;
+	float:right;
+	background-color:#777;
+	margin-bottom:10px;
+	text-align:center;
+	min-height:50px;
+	color:white;
+}
+
+#text_area
+{
+    height:200px;
+	background-color:purple;
+	margin-bottom:10px;
+	text-align:center;
+	margin-top:10px;
+	color:white;
+	
+}
+#header
+{
+	height:250px;
+	background-color:orange;
+	margin-bottom:10px;
+	text-align:center;
+	color:white;
+}
+
+#content
+{
+	min-height:400px;
+}
+#Box1
+{   min-height:400px;
+	width:295px;
+	float:left;
+	
+	background-color:pink;
+	text-align:center;
+	color:white;
+}
+#Box2
+{   
+   
+    min-height:400px;
+	width:295px;
+	background-color:black;
+	float:left;
+	margin-left:7.5px;
+	text-align:center;
+	color:white;
+}
+#Box3
+{
+	
+    min-height:400px;
+	margin-left:7.5px;
+	width:295px;
+	background-color:blue;
+	float:right;
+	text-align:center;
+	color:white;
+	color:white;
+}
+
+#footer
+{
+	margin-top:10px;
+	height:75px;
+	background-color:#777;
+	text-align:center;
+	color:white;
+}

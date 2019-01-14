@@ -1,0 +1,126 @@
+ body
+{
+	background-color:#efefef;
+}
+#wrapper
+{
+ width:1200px;
+margin:0 auto;
+border:2px solid #ccc; 
+}
+#container
+{
+	min-height:50px;
+}
+#logo
+{
+	min-height:50px;
+	background-color:#777;
+	margin-bottom:10px;
+	width:600px;
+	float:left;
+	min-height:50px;
+	color:white;
+}
+#nav
+{
+	
+	width:600px;
+	float:right;
+	background-color:#777;
+	margin-bottom:10px;
+	text-align:center;
+	min-height:50px;
+	color:white;
+}
+#row
+{
+	min-height:100px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#sbox1
+{
+	min-height:100px;
+	width:295px;
+	float:left;
+	background-color:pink;
+	margin-right:6.5px;
+	text-align:center;
+	color:white;
+}
+#sbox2
+{
+	min-height:100px;
+	width:295px;
+	float:left;
+	margin-right:6.5px;
+	background-color:pink;
+	text-align:center;
+	color:white;
+}
+#sbox3
+{
+	min-height:100px;
+	width:295px;
+	float:left;
+	background-color:pink;
+	text-align:center;
+	color:white;
+}
+#sbox4
+{
+	min-height:100px;
+	width:295px;
+	float:right;
+	background-color:pink;
+	text-align:center;
+	color:white;
+}
+
+#content
+{
+	min-height:400px;
+}
+#Box1
+{   
+	min-height:400px;
+	width:395px;
+	float:left;
+	
+	background-color:pink;
+	text-align:center;
+	color:white;
+}
+#Box2
+{   
+   
+    min-height:400px;
+	width:395px;
+	background-color:black;
+	float:left;
+	margin-left:7.5px;
+	text-align:center;
+	color:white;
+}
+#Box3
+{
+	
+    min-height:400px;
+	margin-left:7.5px;
+	width:395px;
+	background-color:blue;
+	float:right;
+	text-align:center;
+	color:white;
+	color:white;
+}
+
+#footer
+{
+	margin-top:10px;
+	height:75px;
+	background-color:#777;
+	text-align:center;
+	color:white;
+}
